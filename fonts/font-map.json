@@ -1,0 +1,83 @@
+{
+  "source": "https://www.instagram.com/viewcci/reel/DefXH-ZveGx/ (viewcci, 'most popular fonts in each niche', watched 2026-11-06)",
+  "rule": "Pick ONE niche per video. Use its display + ui faces and nothing else (CLAUDE.md: one display face, one UI face). Alternates replace a slot; they are never added as a third face.",
+
+  "niches": {
+    "storytelling": {
+      "reel": ["Inter", "Playfair Display", "Poppins", "Garamond"],
+      "match": ["story", "narrative", "case study", "brand story", "origin", "journey", "customer story", "testimonial", "documentary", "emotional", "before and after"],
+      "display": "playfair",
+      "ui": "inter",
+      "alternates": { "display": ["ebgaramond"], "ui": ["poppins"] },
+      "why": "Serif display reads as literary and considered; Inter keeps captions clean."
+    },
+    "vlogs": {
+      "reel": ["Noteworthy", "Tahoma", "Typewriter", "Mojito"],
+      "match": ["vlog", "day in the life", "behind the scenes", "bts", "travel", "event recap", "office tour", "team", "culture", "diary", "personal"],
+      "display": "noteworthy",
+      "ui": "tahoma",
+      "alternates": { "display": ["mojito"], "ui": ["typewriter"] },
+      "why": "Handwritten display feels like a diary; Typewriter is good for date/location stamps."
+    },
+    "educational": {
+      "reel": ["Coolvetica", "SF Pro", "IvyPresto", "Sequel"],
+      "match": ["explainer", "tutorial", "how to", "walkthrough", "demo", "product demo", "tips", "lesson", "guide", "breakdown", "framework", "steps", "listicle", "comparison"],
+      "display": "coolvetica",
+      "ui": "sfpro",
+      "alternates": { "display": ["ivypresto", "sequel"], "ui": ["sequel"] },
+      "code": "jetbrainsmono",
+      "why": "Tight heavy sans for headings, neutral system-style UI for labels. If code is on screen, the code face replaces the ui slot."
+    },
+    "talking-head": {
+      "reel": ["Switzer", "Creato", "Haas Grotesk", "Tempting"],
+      "match": ["talking head", "founder", "opinion", "pov", "podcast", "interview", "commentary", "hot take", "thought leadership", "advice", "captions"],
+      "display": "switzer",
+      "ui": "creato",
+      "alternates": { "display": ["haasgrotesk"], "ui": ["tempting"] },
+      "why": "Neo-grotesk captions stay legible over a face; geometric UI for name tags and lower thirds. Tempting only for one emphasised word."
+    },
+    "hooks": {
+      "reel": ["Anton", "Montserrat", "Bebas Neue", "Impact"],
+      "match": ["hook", "teaser", "promo", "ad", "launch", "announcement", "stat", "big number", "meme", "short", "viral"],
+      "display": "anton",
+      "ui": "montserrat",
+      "alternates": { "display": ["bebasneue", "impact"], "ui": [] },
+      "why": "Condensed heavy caps fill the frame at phone size. Use this niche when the whole video is a hook-led short; otherwise the hook uses the chosen niche's display face."
+    }
+  },
+
+  "never": ["Papyrus", "Arial", "Comic Sans"],
+
+  "fonts": {
+    "inter":       { "name": "Inter",            "css": "Inter",            "status": "bundled",  "files": ["Inter.ttf"], "axes": "wght 100-900, opsz 14-32", "license": "OFL" },
+    "playfair":    { "name": "Playfair Display", "css": "Playfair Display", "status": "bundled",  "files": ["PlayfairDisplay.ttf", "PlayfairDisplay-Italic.ttf"], "axes": "wght 400-900", "license": "OFL" },
+    "poppins":     { "name": "Poppins",          "css": "Poppins",          "status": "bundled",  "files": ["Poppins-Regular.ttf", "Poppins-Medium.ttf", "Poppins-SemiBold.ttf", "Poppins-Bold.ttf", "Poppins-ExtraBold.ttf", "Poppins-Black.ttf"], "license": "OFL" },
+    "ebgaramond":  { "name": "Garamond",         "css": "EB Garamond",      "status": "bundled",  "files": ["EBGaramond.ttf", "EBGaramond-Italic.ttf"], "axes": "wght 400-800", "license": "OFL", "note": "EB Garamond is the free Garamond." },
+
+    "noteworthy":  { "name": "Noteworthy",        "css": "Noteworthy",       "status": "mac-system", "system": "/System/Library/Fonts/Noteworthy.ttc", "standin": "patrickhand", "license": "Apple, ships with macOS" },
+    "tahoma":      { "name": "Tahoma",            "css": "Tahoma",           "status": "mac-system", "system": "/System/Library/Fonts/Supplemental/Tahoma.ttf", "systemBold": "/System/Library/Fonts/Supplemental/Tahoma Bold.ttf", "standin": "inter", "license": "Microsoft, ships with macOS" },
+    "typewriter":  { "name": "American Typewriter","css": "American Typewriter","status": "mac-system", "system": "/System/Library/Fonts/Supplemental/AmericanTypewriter.ttc", "standin": "specialelite", "license": "Apple, ships with macOS" },
+    "mojito":      { "name": "Mojito",            "css": "Bebas Neue",       "status": "stand-in", "standin": "bebasneue", "note": "Commercial font, not bundled. Bebas Neue is the closest free condensed caps." },
+
+    "coolvetica":  { "name": "Coolvetica",        "css": "Archivo",          "status": "stand-in", "standin": "archivo", "settings": "wdth 75, wght 800", "note": "Coolvetica is free for personal use only. Archivo narrowed to wdth 75 is the commercial-safe stand-in." },
+    "sfpro":       { "name": "SF Pro",            "css": "Inter",            "status": "stand-in", "standin": "inter", "note": "Apple licenses SF Pro for Apple-platform UI only. Inter is the usual substitute." },
+    "ivypresto":   { "name": "IvyPresto",         "css": "Instrument Serif", "status": "stand-in", "standin": "instrumentserif", "note": "Commercial (Adobe Fonts). Instrument Serif Italic or Playfair Display Italic stand in." },
+    "sequel":      { "name": "Sequel Sans",       "css": "Inter",            "status": "stand-in", "standin": "inter", "settings": "opsz 32 (Inter Display)", "note": "Commercial. Inter at its display optical size is close." },
+
+    "switzer":     { "name": "Switzer",           "css": "Switzer",          "status": "bundled",  "files": ["Switzer-Variable.ttf", "Switzer-VariableItalic.ttf", "Switzer-Regular.ttf", "Switzer-Medium.ttf", "Switzer-Semibold.ttf", "Switzer-Bold.ttf", "Switzer-Black.ttf"], "axes": "wght 100-900", "license": "Fontshare FFL (free for commercial use)" },
+    "creato":      { "name": "Creato Display",    "css": "Poppins",          "status": "stand-in", "standin": "poppins", "note": "Not bundled. Poppins is the closest geometric sans already here. Drop the real file in fonts/ to switch." },
+    "haasgrotesk": { "name": "Neue Haas Grotesk", "css": "Switzer",          "status": "stand-in", "standin": "switzer", "note": "Commercial. Switzer is a close free neo-grotesk." },
+    "tempting":    { "name": "Tempting",          "css": "Instrument Serif", "status": "stand-in", "standin": "instrumentserif", "note": "Script font, not bundled. Instrument Serif Italic for single emphasised words." },
+
+    "anton":       { "name": "Anton",             "css": "Anton",            "status": "bundled",  "files": ["Anton-Regular.ttf"], "license": "OFL" },
+    "montserrat":  { "name": "Montserrat",        "css": "Montserrat",       "status": "bundled",  "files": ["Montserrat.ttf"], "axes": "wght 100-900", "license": "OFL" },
+    "bebasneue":   { "name": "Bebas Neue",        "css": "Bebas Neue",       "status": "bundled",  "files": ["BebasNeue-Regular.ttf"], "license": "OFL" },
+    "impact":      { "name": "Impact",            "css": "Impact",           "status": "mac-system", "system": "/System/Library/Fonts/Supplemental/Impact.ttf", "standin": "anton", "license": "Microsoft, ships with macOS" },
+
+    "archivo":         { "name": "Archivo",          "css": "Archivo",          "status": "bundled", "files": ["Archivo.ttf"], "axes": "wght 100-900, wdth 62-125", "license": "OFL" },
+    "instrumentserif": { "name": "Instrument Serif", "css": "Instrument Serif", "status": "bundled", "files": ["InstrumentSerif-Italic.ttf"], "license": "OFL" },
+    "jetbrainsmono":   { "name": "JetBrains Mono",   "css": "JetBrains Mono",   "status": "bundled", "files": ["JetBrainsMono.ttf"], "axes": "wght 100-800", "license": "OFL" },
+    "patrickhand":     { "name": "Patrick Hand",     "css": "Patrick Hand",     "status": "bundled", "files": ["PatrickHand-Regular.ttf"], "license": "OFL" },
+    "specialelite":    { "name": "Special Elite",    "css": "Special Elite",    "status": "bundled", "files": ["SpecialElite-Regular.ttf"], "license": "Apache 2.0" }
+  }
+}

@@ -1,0 +1,37 @@
+/* Every family in fonts/font-map.json, registered under its real name.
+   Link from a film: <link rel="stylesheet" href="fonts/fonts.css">
+   Then await document.fonts.load('700 100px "Playfair Display"') before the first seek(). */
+
+/* ---- bundled (variable) ---- */
+@font-face { font-family: "Inter";            src: url("Inter.ttf") format("truetype");                     font-weight: 100 900; font-style: normal; }
+@font-face { font-family: "Playfair Display"; src: url("PlayfairDisplay.ttf") format("truetype");           font-weight: 400 900; font-style: normal; }
+@font-face { font-family: "Playfair Display"; src: url("PlayfairDisplay-Italic.ttf") format("truetype");    font-weight: 400 900; font-style: italic; }
+@font-face { font-family: "EB Garamond";      src: url("EBGaramond.ttf") format("truetype");                font-weight: 400 800; font-style: normal; }
+@font-face { font-family: "EB Garamond";      src: url("EBGaramond-Italic.ttf") format("truetype");         font-weight: 400 800; font-style: italic; }
+@font-face { font-family: "Switzer";          src: url("Switzer-Variable.ttf") format("truetype");          font-weight: 100 900; font-style: normal; }
+@font-face { font-family: "Switzer";          src: url("Switzer-VariableItalic.ttf") format("truetype");    font-weight: 100 900; font-style: italic; }
+@font-face { font-family: "Montserrat";       src: url("Montserrat.ttf") format("truetype");                font-weight: 100 900; font-style: normal; }
+@font-face { font-family: "Archivo";          src: url("Archivo.ttf") format("truetype");                   font-weight: 100 900; font-stretch: 62% 125%; font-style: normal; }
+@font-face { font-family: "JetBrains Mono";   src: url("JetBrainsMono.ttf") format("truetype");             font-weight: 100 800; font-style: normal; }
+
+/* ---- bundled (static) ---- */
+@font-face { font-family: "Poppins"; src: url("Poppins-Regular.ttf") format("truetype");   font-weight: 400; }
+@font-face { font-family: "Poppins"; src: url("Poppins-Medium.ttf") format("truetype");    font-weight: 500; }
+@font-face { font-family: "Poppins"; src: url("Poppins-SemiBold.ttf") format("truetype");  font-weight: 600; }
+@font-face { font-family: "Poppins"; src: url("Poppins-Bold.ttf") format("truetype");      font-weight: 700; }
+@font-face { font-family: "Poppins"; src: url("Poppins-ExtraBold.ttf") format("truetype"); font-weight: 800; }
+@font-face { font-family: "Poppins"; src: url("Poppins-Black.ttf") format("truetype");     font-weight: 900; }
+@font-face { font-family: "Anton";            src: url("Anton-Regular.ttf") format("truetype");          font-weight: 400; }
+@font-face { font-family: "Bebas Neue";       src: url("BebasNeue-Regular.ttf") format("truetype");      font-weight: 400; }
+@font-face { font-family: "Instrument Serif"; src: url("InstrumentSerif-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Patrick Hand";     src: url("PatrickHand-Regular.ttf") format("truetype");    font-weight: 400; }
+@font-face { font-family: "Special Elite";    src: url("SpecialElite-Regular.ttf") format("truetype");   font-weight: 400; }
+
+/* ---- macOS system fonts: render on this Mac only. Each falls back to its free stand-in. ---- */
+@font-face { font-family: "Noteworthy";          src: local("Noteworthy Light"), url("PatrickHand-Regular.ttf") format("truetype"); font-weight: 300 400; }
+@font-face { font-family: "Noteworthy";          src: local("Noteworthy Bold"),  url("PatrickHand-Regular.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "Tahoma";              src: local("Tahoma"),           url("Inter.ttf") format("truetype");              font-weight: 400; }
+@font-face { font-family: "Tahoma";              src: local("Tahoma Bold"), local("Tahoma-Bold"), url("Inter.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "American Typewriter"; src: local("American Typewriter"), url("SpecialElite-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "American Typewriter"; src: local("American Typewriter Bold"), local("AmericanTypewriter-Bold"), url("SpecialElite-Regular.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "Impact";              src: local("Impact"),           url("Anton-Regular.ttf") format("truetype");      font-weight: 400; }

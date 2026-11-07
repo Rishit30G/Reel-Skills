@@ -1,0 +1,18 @@
+{
+  "name": "motion-studio",
+  "version": "1.0.0",
+  "description": "Claude — 15s motion reel, rendered as a pure function of time",
+  "main": "index.js",
+  "scripts": {
+    "render": "node render.mjs",
+    "contact": "node render.mjs --contact",
+    "preview": "npx --yes http-server -p 8080 -c-1 ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "puppeteer-core": "^24.43.1"
+  }
+}

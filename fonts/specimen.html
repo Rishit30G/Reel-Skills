@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Font Map Specimen</title>
+<link rel="stylesheet" href="fonts.css">
+<style>
+  :root { --ink:#141414; --paper:#f4f1ea; --mute:#77736b; --line:#d9d4c8; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:400 15px/1.4 Inter, sans-serif; padding:32px 16px; }
+  main { max-width:1100px; margin:0 auto; }
+  h1 { font:600 13px/1 Inter; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); margin:0 0 24px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:6px; padding:20px; }
+  .niche { font:600 12px/1 Inter; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); }
+  .disp { font-size:46px; line-height:1.02; margin:14px 0 10px; }
+  .ui { font-size:17px; margin:0 0 14px; }
+  .meta { font:400 12px/1.5 "JetBrains Mono"; color:var(--mute); border-top:1px solid var(--line); padding-top:10px; }
+  .never { margin-top:24px; font:400 14px Inter; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Motion studio · fonts by niche</h1>
+  <div class="grid">
+    <div class="card"><div class="niche">Storytelling</div>
+      <div class="disp" style="font-family:'Playfair Display';font-weight:800">How we shipped it in 9 days</div>
+      <p class="ui" style="font-family:Inter;font-weight:500">The deadline was one week away.</p>
+      <div class="meta">Playfair Display 800 / Inter 500</div></div>
+    <div class="card"><div class="niche">Vlogs</div>
+      <div class="disp" style="font-family:Noteworthy;font-weight:700">Day 1 at the conference</div>
+      <p class="ui" style="font-family:Tahoma">Setup, coffee, too many lanyards</p>
+      <div class="meta" style="font-family:'American Typewriter'">Noteworthy / Tahoma · 06.11.2026</div></div>
+    <div class="card"><div class="niche">Educational</div>
+      <div class="disp" style="font-family:Archivo;font-weight:800;font-stretch:75%;font-variation-settings:'wdth' 75">3 steps to a faster website</div>
+      <p class="ui" style="font-family:Inter;font-weight:500">Step 1: cache what you can</p>
+      <div class="meta">Archivo wdth 75 (Coolvetica) / Inter (SF Pro)</div></div>
+    <div class="card"><div class="niche">Talking head</div>
+      <div class="disp" style="font-family:Switzer;font-weight:700">Most teams get this <span style="font-family:'Instrument Serif';font-style:italic;font-weight:400">wrong</span></div>
+      <p class="ui" style="font-family:Poppins;font-weight:600">Alex Morgan · Founder</p>
+      <div class="meta">Switzer 700 / Poppins 600 (Creato) · accent Instrument Serif</div></div>
+    <div class="card"><div class="niche">Hooks</div>
+      <div class="disp" style="font-family:Anton;text-transform:uppercase;font-size:56px">You're losing 40% of traffic</div>
+      <p class="ui" style="font-family:Montserrat;font-weight:700">Here's the one fix</p>
+      <div class="meta">Anton / Montserrat 700 · alt <span style="font-family:'Bebas Neue';font-size:16px">Bebas Neue</span> <span style="font-family:Impact;font-size:14px">Impact</span></div></div>
+  </div>
+  <p class="never">Never: Papyrus, Arial, Comic Sans.</p>
+</main>
+</body>
+</html>
