@@ -1,0 +1,55 @@
+# Local / editor
+.DS_Store
+.cursor/
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# --- Renders and review artifacts ---
+# node render.mjs writes frames, contact sheets, and the finished reel here.
+out/
+renders/
+snapshots/
+frames/
+frames_bg/
+frames_fg/
+
+# Finished encodes, wherever they land (root output.mp4, CLI dumps, etc.)
+*.mp4
+*.webm
+*.mov
+*.mkv
+*.m4v
+*.avi
+
+# Generated scores, masters, voiceovers, and mixed stems.
+# Library hits in audio/sfx/ and skill bundled SFX stay eligible to commit.
+*.wav
+*.aiff
+*.aif
+*.flac
+*.aac
+*.ogg
+*.m4a
+audio/*.mp3
+assets/**/*.mp3
+!audio/sfx/
+!audio/sfx/**
+!.agents/**/assets/sfx/
+!.agents/**/assets/sfx/**
+
+# HyperFrames / media-use working copies (captures, BGM, TTS, provenance)
+.media/
+capture/
+.hyperframes/
+
+# Probe / contact-sheet stills from the render loop
+contact.png
+sheet.png
+probe-*.png
