@@ -35,6 +35,25 @@ Right/Wrong/Riser/Bass were re-matched by measuring the reel's audio spectrum
 Otto clips are meme sounds re-hosted by Otto; the underlying sounds may
 originate elsewhere, so treat them as fine for social edits, riskier for ads.
 
+## Reels 3 and 4: subhangfx82 "Talking Head Sound Effects Part 4" (instagram.com/reel/DfnDAkNNb4K) and harrisonniap "Sound Effects for your next video" (instagram.com/reel/DeKCJSlz5BX)
+
+Files are the downloaded originals, unedited. Each was matched by comparing the
+reel's audio spectrogram against ~4,000 candidates; score is mean dB difference
+(known-identical clips score about 2 dB, unrelated clips 8+).
+
+| File | Reel label | Source | Score | License |
+|---|---|---|---|---|
+| popular-riser.mp3 | Riser (reel 3); also Metallic Riser (reel 4) | MyInstants "popular-riser" (myinstants.com/media/sounds/popular-riser.mp3), 5.3s long version | 3.0 / 1.9 dB | meme clip, unclear origin |
+| metallic-riser.mp3 (already had) | Metallic Riser (reel 4) | see reel 2 table above; same sound, 2.8s cut | 2.0 dB | meme clip, unclear origin |
+| gear-click.mp3 | Gear Click (reel 3) | Pixabay "Gear Click" id 351962 (pixabay.com/sound-effects/film-special-effects-gear-click-351962/) | 2.5 dB, all 11 clicks line up | Pixabay Content License |
+| mouse-click.mp3 | Mouse Click (reel 4) | MyInstants "computer-mouse-click-1" (myinstants.com/media/sounds/computer-mouse-click-1.mp3) | 2.8 dB | meme clip, unclear origin |
+| iphone-charging.mp3 | iPhone Charging (reel 4) | MyInstants "iphone-magsafe-charging-sound" (myinstants.com/media/sounds/iphone-magsafe-charging-sound.mp3) | 2.2 dB | Apple system sound re-hosted; fine for social edits, riskier for ads |
+| camera-shutter.mp3 | Camera Shutter (reel 4) | Pixabay id 39929 (cdn.pixabay.com/audio/2022/03/10/audio_91cf1f1631.mp3) | 3.4 dB on a 0.2s clip; least certain | Pixabay Content License |
+
+Not found (no exact match in MyInstants, Pixabay, Mixkit or Otto; both creators
+only share their packs by DM): Low Rise, Apple Keyboard, Glass Shine, Inertia Ramp
+(reel 3); Camera Clicks, Ding, Mac Typing, Gear, Punch Stop Riser, Cinematic Impact (reel 4).
+
 ## Alternates (deleted, re-download from the URL pattern if needed)
 
 hard pop click 2364, classic click 1117, air woosh 1489,
